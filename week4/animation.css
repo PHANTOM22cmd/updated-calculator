@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent div {
+    background: gold;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 200px;
+    flex-wrap: wrap;
+}
+
+.anim_one {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.anim_two {
+    animation-name: rotate2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+.anim_three {
+    animation-name: rotate2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+}
+
+.anim_four {
+    animation-name: rotate2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 12s;
+}
+
+.anim_five {
+    animation-name: rotate2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 16s;
+}
+
+@keyframes rotate {
+
+    /* from{background: red;}
+    to{background: yellow;} */
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(40vh);
+    }
+
+    100% {
+        transform: 40vh;
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(38vh);
+    }
+
+    100% {
+        transform: 40vh;
+    }
+}

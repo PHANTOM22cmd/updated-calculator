@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* .parent{
+    background: var(--clr-white-main);
+} */
+.flex-container > div, .flex-evenly> div, .flex-around > div {
+    width: 150px;
+    height: 150px;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--clr-white-main);
+    background: var(--clr-main-color);
+    line-height: 5;
+   }
+   .flex-container{
+    display: flex;
+    justify-content: center;
+   }
+   .flex-evenly{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .flex-around{
+    display: flex;
+    justify-content: space-around;
+   }
+

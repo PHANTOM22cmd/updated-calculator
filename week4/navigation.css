@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 255, 0.308);
+}
+.navlinks ul {
+    display: flex;
+    list-style-type: none;
+}
+.navlinks ul li {
+    padding: 0 20px;
+    display: flex;
+    position: relative;
+    left: 1050px;
+    bottom: 35px;
+    gap: 6px;
+    }
+ .navlinks ul li i{
+    margin: 0 3px;
+    top: 500px;
+ }  
+ .menu{
+    padding: 0 20px;
+    display: flex;
+    position: relative;
+    left: 1000px;
+    bottom: 16px;
+  }
+   @media  screen and (min-width: 0px) and (max-width: 700px) {
+ .navlinks ul li{
+    menu{
+        display: block;
+     }
+ }
+     .navlinks ul{
+        display: none;
+    }
+     
+   }
+    
+  

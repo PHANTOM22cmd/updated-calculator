@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let newUser = `James parker`;
+        let intro = {
+            name: `james parker`,
+            occupation: `engineer`,
+        };
+        // asynchronous function
+        setTimeout(() => {
+            console.log(`$(intro.name) and i am an $(intro.occupation)`)
+        }, 5000);
+        let newAge = 25;
+        console.log(newUser);
+        console.log(newAge);
+
+        const checkName = () => {
+            let checkNet = navigator.onLine;
+            if (!checkNet) {
+                alert(`user is offline`)
+            } else {
+                alert(`user is online`)
+            }
+        };
+                // Promises
+                const addedPromise = () => {
+                    const checkPromise = new Promise((resolve, reject) => {
+                        setTimeout(() => {
+                            resolve(`payment processed successfully`);
+                            reject(`there was an error processing payment`)
+                        }, 300)
+                    })
+                    .then((resolve) => {
+                        console.log(resolve)
+                    }).catch((reject) => {
+                        console.log(reject)
+                    });
+                };
+                addedPromise();
+
+                //using the try and catch method
+                const addedPromise = () => {
+                    try {
+                        c 
+                        })
+                         
+                    } catch (error) {
+                        console.log(error)
+                    }
+                };
+    </script>
+</body>
+
+</html>

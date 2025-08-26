@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Sign-Up Form</title>
+  <style>
+    *{
+      box-sizing: 0; 
+      padding: 0;
+       background-color: rgba(0, 128, 0, 0.705);
+
+
+
+    }
+#btn{
+              background-color: rgba(0, 128, 0, 0.705);
+          border: none;
+          color: white;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          }
+
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <!-- Form container -->
+         <h2 style="font-weight: bold;text-align: center;font-size: 14px ;">Sign Up</h2>
+        <button id="btn">1</button> <span>Your --Basic Info</span>
+  <form action="mail to:youeemail@gmail.com" method="get">
+    <div>
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required>
+    </div>
+        <div> <label for="age">Age</label>
+        <!-- For Under 13 -->
+         <div>
+          <span id="User age">under 13</span>
+      <input type="Radio" id="Under 13="name=age>
+         </div>
+         <!-- For over 13 -->
+         <div>
+          <span id="User age">over 13</span>
+      <input type="Radio" id="Over 13="name=age>
+         </div>
+        </div>
+        <!--Profile section-->
+<button id="btn">2</button> <span>Your --Profile</span>
+<!--div for bio-->
+<div>
+  <label for="bio">bio</label>
+  <textarea name="30" rows="10"placeholder="tell us about yourself"></textarea>
+</div>
+<!--div for job-->
+<div>
+<label for="role">Job Roles:</label>
+<select>
+  <option value="">Front end development</option>
+  <option value="">UI/UX</option>
+  <option value="">Cyber security</option>
+  <option value="">Digital Marketing</option>
+  <option value="">Data Analysis</option>
+</select>
+</div>
+<!--div for interest-->
+<div>
+  <label for="interest">Interest:</label>
+</div>
+<div>
+  <input type="checkbox" id="check">
+<label for="check">Developement</label>
+</div>
+<div>
+  <input type="checkbox" id="check2">
+<label for="check">Business</label>
+</div>
+<div>
+  <input type="checkbox" id="check3">
+<label for="check">Design</label>
+</div>
+<!--div for sign up-->
+<div>
+  <button type="submit">Sign Up</button>
+</div>
+  </form>
+</div>
+
+
+</body>
+
+</html>

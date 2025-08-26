@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: lab(21.25% 0 0 / 0.911);
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 2px;
+  background-color: white;
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo span {
+  color: #0070ba;
+}
+
+.nav-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 6rem;
+}
+.nav-center a {
+  text-decoration: none;
+  color: #0070ba;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+
+.btn-outline {
+  border: 1.5px solid #0070ba;
+}
+
+.btn-filled {
+  background-color: #0070ba;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: url(/week2/images/newton.png) no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+  opacity: none;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.small-text {
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section.light {
+  background-color: #f7f9fa;
+}
+
+.section.white {
+  background-color: #fff;
+}
+
+.section.blue {
+  background-color: hwb(219 0% 47%);
+  color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  max-width: 200px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.features h4 {
+  margin-bottom: 0.5rem;
+}
+
+.cta a {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+  background: #f1f1f1;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #555;
+}

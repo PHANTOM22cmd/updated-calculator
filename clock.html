@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            margin: 0;
+            background: #f4f4f4;
+         }
+
+        .clockcontainer {
+            text-align: center;
+            
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .clockitems {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timebox {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            min-width: 80px;
+        }
+
+        .timebox span {
+            display: block;
+        }
+
+        .number {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .ampm {
+            font-size: 20px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .image{
+            /* margin-top: 20px; */
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clockcontainer">
+        <h1>MY DIGITAL WATCH</h1>
+        <div class="clockitems">
+            <div class="timebox">
+                <span id="hours" class="number">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="timebox">
+                <span id="minutes" class="number">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="timebox">
+                <span id="seconds" class="number">00</span>
+                <span class="label">Seconds</span>
+            </div>
+            <span id="ampm" class="ampm">AM</span>
+        </div>
+        <div class="image">
+<!-- <img src="/week3/zP4l1O8G_400x400.jpg" alt=""> -->
+        </div>
+        
+    </div>
+
+    <script>
+        let hourDiv = document.getElementById("hours");
+        let minutesDiv = document.getElementById("minutes");
+        let secondsDiv = document.getElementById("seconds");
+        let ampmDiv = document.getElementById("ampm");
+
+        const updateTime = () => {
+            let currentTime = new Date();
+            let currentHour = currentTime.getHours();
+            let currentMinute = currentTime.getMinutes();
+            let currentSecond = currentTime.getSeconds();
+
+            let ampm;
+            if (currentHour >= 12) {
+                ampm = "PM";
+            } else {
+                ampm = "AM";
+            }
+
+            // Convert to 12-hour format
+            currentHour = currentHour % 12 || 12;
+
+            hourDiv.textContent = String(currentHour);
+            minutesDiv.textContent = String(currentMinute);
+            secondsDiv.textContent = String(currentSecond);
+            ampmDiv.textContent = ampm;
+
+            setTimeout(updateTime, 1000);
+        };
+
+        updateTime();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // String data type
+    let myName = "phantom";
+    let myCountry = "Nigeria"; // using a single quote
+    let myTribe = `Igbo`; // using a tempate literal
+    console.log(typeof (myName, myCountry, myTribe))
+
+    // number data type
+    let myAge = 27;
+    let newAge = 45.78;
+    console.log(typeof (myAge, newAge))
+
+    // Boolean data type
+    let greaterNumber = 15;
+    let lesserNumber = 5;
+    let execute = greaterNumber > lesserNumber
+    console.log(greaterNumber > lesserNumber);
+    console.log(typeof (execute))
+
+    // undefined data type
+    let digitalworld;
+    console.log(digitalworld);
+    console.log(typeof (digitalworld))
+
+    //using symbol data type
+    const id = Symbol("id");
+    console.log(id);
+    console.log(typeof (id))
+
+    // using Bigint data type
+    let largeNum = 3338292837363737373837388483738393392920373n;
+    console.log(largeNum);
+    console.log(typeof (largeNum))
+
+    // using object data type
+    const phantom = {
+        height: 56,
+        name: `crypto`,
+        year: 1945,
+        isMarried: true,
+    };
+    console.log(phantom.isMarried);
+
+    // j.s array
+    let myArray = [`Ronaldo`, `Ronaldinho`, `Messi`];
+    console.log(typeof (myArray))
+    console.log(myArray)
+
+    let myFavfood = [`spaghetti & turkey`, `ricesalad & turkey`,]
+    console.log(myFavfood)
+    console.log(`This array is ${myFavfood.length}`)
+    // console.log(typeof(myFavfood))
+
+    //push method this adds an item to an array
+    myFavfood.push(`egg`);
+    console.log(myFavfood)
+
+    myFavfood.push(`chicken`);
+    console.log(myFavfood)
+
+    //pop method this removes the last item in an array
+    myFavfood.pop();
+        console.log(myFavfood);
+
+        // unshift adds items to the beginning
+        myFavfood.unshift("beans");
+        console.log(myFavfood);
+
+        // shift removes the first item
+        myFavfood.shift("beans");
+        console.log(myFavfood);
+
+        // concat joins two arrays
+         let phantom1 = [1,2];
+         let phantom2 = [3,4];
+         let phantom3 = [5,6];
+          let combined = phantom1.concat(phantom2, phantom3);
+          console.log(combined);
+
+          // includes check if an element exists
+          var fruits = ["apple", "cucumber", "pear"];
+          console.log(fruits.includes("banana"));
+          console.log(fruits.includes("pear"));
+
+          //JS FUNCTIONS
+          // ways of declaring functions
+
+          function greet() {
+            let userprofile = {
+                age: 21,
+                color: "black",
+                nationality: "nigeria",
+                name: "phantom",
+             };
+             alert(`Name: ${userprofile.name} -Age: ${userprofile.age} -Color: ${userprofile.color} -Nationality: ${userprofile.nationality}`);
+            }
+            greet(); // how to call a function
+
+            // function that accepts parameters
+            function greetUser(message, name) {
+                const nameUser = prompt("what is your name?");
+                const userMessage = "Good Morning";
+            }
+            // creating elements in js
+</script>
+// <!-- <script src="/week6/datatype.js"></script> -->
+
+</html>

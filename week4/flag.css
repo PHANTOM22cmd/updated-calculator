@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffff;
+  }
+
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 200px;
+  }
+  .box{
+    border: 1px solid transparent;
+    width: 200px;
+    height: 300px;
+   }
+   .green{
+    background-color: green;
+    }
+    .white{
+        background-color: #fff;
+    }

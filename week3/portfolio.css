@@ -1,0 +1,141 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Jost", "Sans-serif";
+}
+
+:root {
+   --clr-white-main: #fff;
+   --clr-lightGreen: rgb(20, 90, 20);
+   --clr-dark: #000;
+}
+
+.menu {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   left: 0;
+   right: 0;
+   top: 0;
+   background: transparent;
+   padding: 10px 60px;
+   z-index: 100;
+   color: var(--clr-white-main);
+}
+
+.nav-links ul {
+   display: flex;
+   list-style-type: none;
+}
+
+.nav-links ul li {
+   padding: 0 20px;
+}
+
+.nav-links ul li i {
+   margin: 0 8px;
+}
+
+#home {
+   background: linear-gradient(rgb(50, 50, 90, 0.4), rgb(50, 50, 70, 0.9)),
+      url(/week3/GmvRUs8XEAACWtt.jpeg) no-repeat center/cover;
+   height: 105vh;
+   position: relative;
+   top: -60px;
+}
+
+.home-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 300px 0 0 0;
+   min-height: 100vh;
+}
+
+.occupation h2 {
+   font-size: 3rem;
+}
+
+.btns button {
+   padding: 13px 65px;
+   background: transparent;
+   border: 2px solid var(--clr-white-main);
+   border-radius: 30px;
+   color: var(--clr-white-main);
+   cursor: pointer;
+   transition: transform 0.9s ease, background-color 0.9s ease;
+   margin: 0 15px;
+}
+
+.btns {
+   margin: 15px 0;
+}
+
+.btns button:hover {
+   transform: translate(-10px);
+   background: var(--clr-lightGreen);
+   color: var(--clr-white-main);
+}
+
+.About {
+   background: #1c1c1cbb;
+   padding: 60px 20px;
+   text-align: center;
+}
+
+.About h3 {
+   font-size: 2.5rem;
+   color: var(--clr-white-main);
+}
+
+.About h3 span {
+   color: var(--clr-lightGreen);
+}
+
+.bio {
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   color: var(--clr-white-main)
+}
+
+.info {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 40px;
+   margin-top: 10px;
+   color: var(--clr-white-main);
+   line-height: 1rem;
+}
+
+.Services {
+   text-align: center;
+   color: var(--clr-white-main);
+   background: #11111111;
+}
+
+ul li {
+   list-style: none;
+   color: var(--clr-white-main);
+   justify-content: flex-end;
+}
+
+.btn-download {
+   border-radius: 50%;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   color: var(--clr-lightGreen);
+}
+.about-content{
+   text-align: center;
+}
+.land{
+   display: inline-flex;
+   
+
+ }
